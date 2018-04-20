@@ -17,7 +17,7 @@ Just update `<*bucket-name*>` in the CircleCI config file to have the correct bu
           command: ~/.local/bin/aws s3 cp build/index.html s3://<*bucket-name*>/index.html --cache-control=no-cache
 ```
 
-Then make sure that CircleCI is set up with AWS credentials from an IAM user in your AWS account and make sure it has the correct permissions to run these S3 commands, which would lokk something like this right now (again, replacing `<*bucket-name*>` with your bucket name):
+Then make sure that CircleCI is set up with AWS credentials from an IAM user in your AWS account and make sure it has the correct permissions to run these S3 commands, which would look something like this right now (again, replacing `<*bucket-name*>` with your bucket name):
 
 ```
 {
@@ -57,4 +57,4 @@ Then make sure that CircleCI is set up with AWS credentials from an IAM user in 
 
 ### Other info
 
-I removed the react app service worker, becuase it caused issues with caching that I didn't want to deal with at the time.
+I removed the react app service worker, because it caused issues with caching that I didn't want to deal with at the time.
